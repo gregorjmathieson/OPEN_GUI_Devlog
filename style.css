@@ -3,6 +3,10 @@ body {
     padding: 20px;
     background: #f1f1f1;
   }
+
+li {
+  font-size: 20pt;
+}
   
   /* Header/Blog Title */
   .header {
@@ -17,6 +21,23 @@ body {
     max-width: 100%;
     max-height: 100%;
     float: left;
+  }
+
+  .images {
+    flex: 40%;
+    padding: 5px;
+    width: 90%;
+    /* height: 20px; */
+  }
+
+  .images:hover {
+    opacity: 80%;
+  }
+
+  #album {
+    text-align: center;
+    display: flex;
+    width: 100%;
   }
   
   /* Add a card effect for articles */

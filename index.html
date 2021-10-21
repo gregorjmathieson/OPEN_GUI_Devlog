@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="JS/lightbox2-master/dist/css/lightbox.css">
+        <script src="JS/lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
     </head>
 
     <body>
         <div class="header">
-            <img class="logo" src="University_of_Edinburgh_ceremonial_roundel.svg.png">
+            <img class="logo" src="IMAGES/University_of_Edinburgh_ceremonial_roundel.svg.png">
             <h2>OPEN GUI DEVELOPMENT LOG</h2>
             <h5>Gregor Mathieson (s1801007)</h5>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>22/10/21</h2>
+                <ul>
+                    <li>Did some quick research on how contemporary power simulation software GUIs look. A common theme is a comprehensive toolbar at the top of the screen. It also seems to be common to have a large central SPICE-esque canvas to place the grid entities. Colour is often used to have an intuitive first-glance read on the situation of the simulation. Another common theme is to keep different tabs for graphs and other information in smaller windows within the program. Examples are shown below: (Click to enlarge)</li>
+                    <div id="album">
+                        <a href="IMAGES/UI_EXAMPLES/1.jpg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/1.jpg" alt="http://engineeringsoftwares.com/screenshots/1becf77fa726898a5101f144c8948174-14607182575710cab1e9620.jpg"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/2.jpg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/2.jpg" alt="https://www.electricityforum.com/uploads/courses/49.jpg"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/3.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/3.png" alt="https://www.mathworks.com/services/consulting/proven-solutions/electrical-power-systems-simulation/_jcr_content/mainParsys/column_0/1/columns_copy_copy/2/image_0.adapt.full.medium.png/1623866773250.png"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/4.jpg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/4.jpg" alt="https://eepowerschool.com/wp-content/uploads/2018/01/Power-World-Simulation-an-electrical-software-for-simulating-power-systems.jpg"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/5.jpeg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/5.jpeg" alt="https://th.bing.com/th/id/R50581f4b86a0991f5aeeee38a9c44308?rik=gRyJx8Km11J+Ag&riu=http://www.simulation-research.com/sr/products/caspoc/threelevellarge.jpg&ehk=BgLLrnSeV1UOOOAmi/1sKocTEuwB1mXcb03L87m/vYA=&risl=&pid=ImgRaw"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/6.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/6.png" alt="https://upload.wikimedia.org/wikipedia/commons/d/d1/SESShield-3D.png"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/7.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/7.png" alt="https://www.plm.automation.siemens.com/media/global/en/Simcenter-Amesim-Aircraft-Electrical-Systems_tcm27-26872.png"></img></a>
+                    </div>
+                    <li>With the other examples in mind, I have created a very basic skeleton of what the UI layout might look like. Note this is not a final product, and a more elaborate mock-up will be done soon. (Click to enlarge)</li>
+                    <div id="album">
+                        <a href="IMAGES/Mock-Up/Web 1920 – 1.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/Mock-Up/Web 1920 – 1.png"></img></a>
+                        <a href="IMAGES/Mock-Up/basic-concept-preview.PNG" data-lightbox="grouped_elements"><img class="images" src="IMAGES/Mock-Up/basic-concept-preview.PNG"></img></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>21/10/21</h2>
+                <ul>
+                    <li>Set about making a short-term list of goals to achieve with my understanding of the new GUI system (I keep track of these goals <a href="https://trello.com/b/vg6ECrdb/beng-todo">here</a>). These should act as building blocks when I start putting the GUI together:
+                        <ol>
+                            <li>be able to create a new entity, and edit that entity's attributes</li>
+                            <li>be able to display graphs after simulation</li>
+                            <li>be able to drag and drop entities</li>
+                            <li>be able to make connections</li>
+                        </ol>
+                    </li>
+                    <li>I followed some <a href="https://realpython.com/python-gui-with-wxpython/">basic tutorials</a> on how to get a basic windows application up and running, starting with a simple program that prints to the console any number typed into a textbox before pressing a button to confirm your input:</li>
+                    <image src="IMAGES/firstGUI.png"></image>
+                    <image src="IMAGES/firstGUIoutput.png"></image>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>20/10/21</h2>
+                <ul>
+                    <li>Noticed that the "drag and drop" visual GUI implementation tool for Python with Visual Studio 2019 is no longer supported</li>
+                    <li>Explored some methods for still using the "drag and drop" method by using C# or Visual Basic and running it in tandem with python code, but it seems dofficult to do and probably quite slow.</li>
+                    <li>Decided to use <a href="https://wxpython.org/">wxPython</a>, a Python GUI development toolkit. WxPython uses native widget elements and is cross-platform, so it shouldn't look strange if it's run on MAC or LINUX distribututions. It also has ample documentation online so seems ideal for a first-time development.</li>
+                    <li>To brush up on some OOP in Python, I watched and followed along with Corey Schafer's tutorial playlist, very detailed and informative.</li>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </ul>
+            </div>
         </div>
         <div class="row">
             <div class="card">
@@ -25,6 +80,7 @@
                     <li>Got OPEN case study working on Visual Studio 2019</li>
                     <li>Virtual environment created with required packaged</li>
                     <li>Started working on Gantt chart to plan progress in the project</li>
+                    <img src="IMAGES/OPEN GUI Development_GANTTCHART.png">
                 </ul>
         </div>
         <div class="row">
@@ -48,5 +104,31 @@
         <div class="footer">
             <h2><a href="index.html">Back to top</h2>
         </div>
+
+	<!-- Lightbox: Lokesh Dhakar https://lokeshdhakar.com/-->
+    <!--
+        The MIT License (MIT)
+
+        Copyright (c) 2015 Lokesh Dhakar
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+    -->
+     
     </body>
 </html>
