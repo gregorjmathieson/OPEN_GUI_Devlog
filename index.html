@@ -13,24 +13,153 @@
             <h2>OPEN GUI DEVELOPMENT LOG</h2>
             <h5>Gregor Mathieson (s1801007)</h5>
         </div>
+        <!-- <div class="row">
+            <div class="card">
+                <h2>--/--/--</h2>
+                <ul>
+                    <li>Template</li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="card">
+                <h2>07/11/21</h2>
+                <ul>
+                    <li>Found a visual implementation tool for wxWidgets (the parent library of wxPython), called <a href="https://github.com/wxFormBuilder/wxFormBuilder">wxFormBuilder</a>. It seems to be a really useful and intuitive tool, and it is sure to speed up the development process a considerable amount.</li>
+                    <li>Just because I am using a visual implementation tool now doesn't mean that all of the time I spent learning the wxPython coding library is in vain however, since the tool seems to be limited. Some of the more advanced features will have to be coded in manually.</li>
+                    <li>The wxFormBuilder also doesn't seem to have very good documentation. It is essentially just taken from the <a href="https://docs.wxwidgets.org/3.0/page_class_cat.html">wxWidgets library</a> though, so this might not be that big of a problem.</li>
+                    <li>Below, a simple mock-up with buttons (right) based off of the planned canvas layout (left) (Click to enlarge):</li>
+                    <div id="album">
+                        <a href="IMAGES/ChaimaaCanvasLayoutIdea.PNG" data-lightbox="new_canvas"><img class="images" src="IMAGES/ChaimaaCanvasLayoutIdea.PNG"></img></a>
+                        <a href="IMAGES/New_Canvas.PNG" data-lightbox="new_canvas"><img class="images" src="IMAGES/New_Canvas.PNG"></img></a>
+                    </div>
+                    <li>Something I am worried about at this stage is how to develop the central display window on the canvas. I will probably have to add this portion manually.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>06/11/21</h2>
+                <ul>
+                    <li>Canvas seems to look okay in the window when the program runs. I am worried, however, about screen resolutions. I am developing this on a high resolution monitor, and although there are methods in wxPython to get the native resolution, namely wx.GetDisplaySize(), it only takes the display size of the monitor that the program initlialises to... I will have to look into this problem further.</li>
+                    <li>I tried creating seperate panels in the main frame of the GUI window. For my own aid, I coloured each region so I could tell where each panel was. (Click to enlarge)</li>
+                    <div id="album">
+                        <a href="IMAGES/ChaimaaCanvasLayoutIdea.PNG" data-lightbox="manual_attempt"><img class="images" src="IMAGES/ChaimaaCanvasLayoutIdea.PNG"></img></a>
+                        <a href="IMAGES/ManualCanvasAttempt.PNG" data-lightbox="manual_attempt"><img class="images" src="IMAGES/ManualCanvasAttempt.PNG"></a>
+                    </div>
+                    <li>I found sizing to be a big issue. As stated before, depending on the size of the monitor, the size of the panel changes. This is something that is going to take some time to fix.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>04/11/21</h2>
+                <ul>
+                    <li>Had first BEng Project presentation. Examiner made the following notes on my presentation:
+                        <ol>
+                            <li>Presentation slides didn't support my spoken presentation very well. Images and visualisation is is good, but it is important that the information on the slides play an active role in presenting the information.</li>
+                            <li>I wasn't super clear on what OPEN is; I will need to have a more detailed description of OPEN and its significance.</li>
+                            <li>The displayed mock-up wasn't very good. I had the canvas shown, but it wasn't in very good detail, I will have to have a more in-detail mock-up of the GUI canvas.</li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>Had a meeting with supervisor, supervisor suggested attempting the main canvas code in the following sections, to help break up the workload:
+                        <ol>
+                            <li>Model of the system, first tab of the GUI.</li>
+                            <li>Power information. Power diagrams and bus network displays should be visually appealing and easy to understand at a glance. Use of colour is recommended.</li>
+                            <li>Curves and graphs. Maybe have a MatPlotLib extension.</li>
+                            <li>Data. This should be in tabular format, and should be filterable.</li>
+                            <li>Also, it should be stated that the user should be able to upload their own datasets, their own asset library, and their own control algorithms.</li>
+                            <div id="album">
+                                <a href="IMAGES/RecommendedCanvas/recommendedModel.PNG" data-lightbox="reccomendations"><img class="images" src="IMAGES/RecommendedCanvas/recommendedModel.PNG"></a>
+                                <a href="IMAGES/RecommendedCanvas/recommendedPF.PNG" data-lightbox="reccomendations"><img class="images" src="IMAGES/RecommendedCanvas/recommendedPF.PNG"></a>
+                                <a href="IMAGES/RecommendedCanvas/recommendedCurves.PNG" data-lightbox="reccomendations"><img class="images" src="IMAGES/RecommendedCanvas/recommendedCurves.PNG"></a>
+                                <a href="IMAGES/RecommendedCanvas/recommendedData.PNG" data-lightbox="reccomendations"><img class="images" src="IMAGES/RecommendedCanvas/recommendedData.PNG"></a>
+                            </div>
+                            <p>Image credit to Chaimaa Essayeh</p>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>01/11/21</h2>
+                <ul>
+                    <li>Created a method of sending user inputted text to the console. The code also includes a pop-up dialog after the user has submitted the text.</li>
+                    <div id="album">
+                        <a href="IMAGES/Text Entry/text_entry_gui.PNG" data-lightbox="text_entry"><img class="images" src="IMAGES/Text Entry/text_entry_gui.PNG"></a>
+                        <a href="IMAGES/Text Entry/text_entry_popup_dialog.PNG" data-lightbox="text_entry"><img class="images" src="IMAGES/Text Entry/text_entry_popup_dialog.PNG"></a>
+                        <a href="IMAGES/Text Entry/text_entry_output.PNG" data-lightbox="text_entry"><img class="images" src="IMAGES/Text Entry/text_entry_output.PNG"></a>
+                    </div>
+                    <li>This method should be useful when combined with code previously implemented in order to add new assets to an asset list. If the user can input the values manually, it should make it much easier to add new assets with user-defined attributes.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>28/10/21</h2>
+                <ul>
+                    <li>Read a <a href="https://zetcode.com/wxpython/">tutorial series</a> that goes through some of the basics of wxPython, and works through most of the library.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>27/10/21</h2>
+                <ul>
+                    <li>Created some background code using OOP methodology to create a new asset with some variables.</li>
+                    <div id="album">
+                        <a href="IMAGES/AssetImages/ReallySimpleAssetCreator.PNG" data-lightbox="asset_images"><img class="images" src="IMAGES/AssetImages/ReallySimpleAssetCreator.PNG"></a>
+                        <a href="IMAGES/AssetImages/ButtonCode.PNG" data-lightbox="asset_images"><img class="images" src="IMAGES/AssetImages/ButtonCode.PNG"></a>
+                        <a href="IMAGES/AssetImages/AssetBackgroundCode.PNG" data-lightbox="asset_images"><img class="images" src="IMAGES/AssetImages/AssetBackgroundCode.PNG"></a>
+                    </div>
+                    <li>The code above works by adding the asset described by the button code into an asset list, that is part of the Asset class in the code shown on the image to the right.</li>
+                    <li>Currently, the options for the asset to be added cannot be changed from the GUI. This is obviously something I would liket to change in the near future.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>26/10/21</h2>
+                <ul>
+                    <li>Completed <a href="https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc&t=1s">OOP tutorial series</a>.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>25/10/21</h2>
+                <ul>
+                    <li>Weekly meeting, discussed the following:
+                        <ol>
+                            <li>Have an ability for the GUI to export data in xml or csv format etc...</li>
+                            <li>Have an ability to save and load projects (JSON?)</li>
+                            <li>Have a graph system with zoom features, multiple inputs, axis manipulation etc...</li>
+                            <li>UML diagrams and use cases.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="row">
             <div class="card">
                 <h2>22/10/21</h2>
                 <ul>
                     <li>Did some quick research on how contemporary power simulation software GUIs look. A common theme is a comprehensive toolbar at the top of the screen. It also seems to be common to have a large central SPICE-esque canvas to place the grid entities. Colour is often used to have an intuitive first-glance read on the situation of the simulation. Another common theme is to keep different tabs for graphs and other information in smaller windows within the program. Examples are shown below: (Click to enlarge)</li>
                     <div id="album">
-                        <a href="IMAGES/UI_EXAMPLES/1.jpg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/1.jpg" alt="http://engineeringsoftwares.com/screenshots/1becf77fa726898a5101f144c8948174-14607182575710cab1e9620.jpg"></img></a>
-                        <a href="IMAGES/UI_EXAMPLES/2.jpg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/2.jpg" alt="https://www.electricityforum.com/uploads/courses/49.jpg"></img></a>
-                        <a href="IMAGES/UI_EXAMPLES/3.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/3.png" alt="https://www.mathworks.com/services/consulting/proven-solutions/electrical-power-systems-simulation/_jcr_content/mainParsys/column_0/1/columns_copy_copy/2/image_0.adapt.full.medium.png/1623866773250.png"></img></a>
-                        <a href="IMAGES/UI_EXAMPLES/4.jpg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/4.jpg" alt="https://eepowerschool.com/wp-content/uploads/2018/01/Power-World-Simulation-an-electrical-software-for-simulating-power-systems.jpg"></img></a>
-                        <a href="IMAGES/UI_EXAMPLES/5.jpeg" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/5.jpeg" alt="https://th.bing.com/th/id/R50581f4b86a0991f5aeeee38a9c44308?rik=gRyJx8Km11J+Ag&riu=http://www.simulation-research.com/sr/products/caspoc/threelevellarge.jpg&ehk=BgLLrnSeV1UOOOAmi/1sKocTEuwB1mXcb03L87m/vYA=&risl=&pid=ImgRaw"></img></a>
-                        <a href="IMAGES/UI_EXAMPLES/6.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/6.png" alt="https://upload.wikimedia.org/wikipedia/commons/d/d1/SESShield-3D.png"></img></a>
-                        <a href="IMAGES/UI_EXAMPLES/7.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/UI_EXAMPLES/7.png" alt="https://www.plm.automation.siemens.com/media/global/en/Simcenter-Amesim-Aircraft-Electrical-Systems_tcm27-26872.png"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/1.jpg" data-lightbox="grouped_elements_examples"><img class="images" src="IMAGES/UI_EXAMPLES/1.jpg" alt="http://engineeringsoftwares.com/screenshots/1becf77fa726898a5101f144c8948174-14607182575710cab1e9620.jpg"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/2.jpg" data-lightbox="grouped_elements_examples"><img class="images" src="IMAGES/UI_EXAMPLES/2.jpg" alt="https://www.electricityforum.com/uploads/courses/49.jpg"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/3.png" data-lightbox="grouped_elements_examples"><img class="images" src="IMAGES/UI_EXAMPLES/3.png" alt="https://www.mathworks.com/services/consulting/proven-solutions/electrical-power-systems-simulation/_jcr_content/mainParsys/column_0/1/columns_copy_copy/2/image_0.adapt.full.medium.png/1623866773250.png"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/4.jpg" data-lightbox="grouped_elements_examples"><img class="images" src="IMAGES/UI_EXAMPLES/4.jpg" alt="https://eepowerschool.com/wp-content/uploads/2018/01/Power-World-Simulation-an-electrical-software-for-simulating-power-systems.jpg"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/5.jpeg" data-lightbox="grouped_elements_examples"><img class="images" src="IMAGES/UI_EXAMPLES/5.jpeg" alt="https://th.bing.com/th/id/R50581f4b86a0991f5aeeee38a9c44308?rik=gRyJx8Km11J+Ag&riu=http://www.simulation-research.com/sr/products/caspoc/threelevellarge.jpg&ehk=BgLLrnSeV1UOOOAmi/1sKocTEuwB1mXcb03L87m/vYA=&risl=&pid=ImgRaw"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/6.png" data-lightbox="grouped_elements_examples"><img class="images" src="IMAGES/UI_EXAMPLES/6.png" alt="https://upload.wikimedia.org/wikipedia/commons/d/d1/SESShield-3D.png"></img></a>
+                        <a href="IMAGES/UI_EXAMPLES/7.png" data-lightbox="grouped_elements_examples"><img class="images" src="IMAGES/UI_EXAMPLES/7.png" alt="https://www.plm.automation.siemens.com/media/global/en/Simcenter-Amesim-Aircraft-Electrical-Systems_tcm27-26872.png"></img></a>
                     </div>
                     <li>With the other examples in mind, I have created a very basic skeleton of what the UI layout might look like. Note this is not a final product, and a more elaborate mock-up will be done soon. (Click to enlarge)</li>
                     <div id="album">
-                        <a href="IMAGES/Mock-Up/Web 1920 – 1.png" data-lightbox="grouped_elements"><img class="images" src="IMAGES/Mock-Up/Web 1920 – 1.png"></img></a>
-                        <a href="IMAGES/Mock-Up/basic-concept-preview.PNG" data-lightbox="grouped_elements"><img class="images" src="IMAGES/Mock-Up/basic-concept-preview.PNG"></img></a>
+                        <a href="IMAGES/Mock-Up/Web 1920 – 1.png" data-lightbox="grouped_elements_layout"><img class="images" src="IMAGES/Mock-Up/Web 1920 – 1.png"></img></a>
+                        <a href="IMAGES/Mock-Up/basic-concept-preview.PNG" data-lightbox="grouped_elements_layout"><img class="images" src="IMAGES/Mock-Up/basic-concept-preview.PNG"></img></a>
                     </div>
                 </ul>
             </div>
