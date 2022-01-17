@@ -23,6 +23,32 @@
         </div> -->
         <div class="row">
             <div class="card">
+                <h1>New Look!</h1>
+                <h2>17/01/22</h2>
+                <ul>
+                    <li>There are now four main tabs in a notebook in the central area of the canvas. The "Active Asset Attributes" panel at the top right of the canvas has also been updated to be a "Property Grid", which should allow for better displaying of the attributes of a selected asset once that function is in place.</li>
+                    <li>Also, the "Active Asset List" panel at the bottom right of the canvas is now a wxListCtrl, which is essentially just a list of text that allows for event handling when each item is selected. This is the obvious next step in the development process.</li>
+                    <li>Note also in the images below that the "Add Row" and "Add Column" buttons do not function as of yet.</li>
+                    <li>A notable new feature that has been developed is the ability to save data to a .csv filetype, and open this file in excell. A potential flaw here is my choice to not record any empty spaces between values. Since the data is small enough to be almost negliginle, I may decide to just record every item in the grid, regardless if it has value null or not.</li>
+                    <li>The writeToCSV() function is stored in an external .py file.</li>
+                    <li>Note that currently there is no user input to change the filename. It will just be "data", however the number next to data will increment if a file with that name already exists: data1, data2, etc...</li>
+                    <div id="album">
+                        <a href="IMAGES/SaveData/newlook.PNG" data-lightbox="savedata"><img class="images" src="IMAGES/SaveData/newlook.PNG"></img></a>
+                        <a href="IMAGES/SaveData/savadatacode.PNG" data-lightbox="savedata"><img class="images" src="IMAGES/SaveData/savadatacode.PNG"></img></a>
+                        <a href="IMAGES/SaveData/savedatafunction.PNG" data-lightbox="savedata"><img class="images" src="IMAGES/SaveData/savedatafunction.PNG"></img></a>
+                        <a href="IMAGES/SaveData/savebutton.PNG" data-lightbox="savedata"><img class="images" src="IMAGES/SaveData/savebutton.PNG"></img></a>
+                        <a href="IMAGES/SaveData/csvfiles.PNG" data-lightbox="savedata"><img class="images" src="IMAGES/SaveData/csvfiles.PNG"></img></a>
+                        <a href="IMAGES/SaveData/inexcel.PNG" data-lightbox="savedata"><img class="images" src="IMAGES/SaveData/inexcel.PNG"></img></a>
+                    </div>
+                    <li>As of yet there is no ability to load data, although the tast should be relatively straightforward to implement. The reason I have not implemented this feature as of yet is due to the possibility of there being more data than can fit on the active grid within the canvas. I am not sure how the GUI would react and would like to do some testing.</li>
+                    <li>In the future, I would like to implement a library of asset types than can be accessed by the main file. This will allow for different strings to be shown in the "Active Asset Attributes" tab that will change dynamically depending on the class of asset chosen.</li>
+                    <li>I am not sure how to proceed with the curves section. wxWidgets requires the support of third party libraries to display graphs within the GUI so I will need to do some research. It should be easy enough, however to display some charts and graphs in external popup windows, the way OPEN already does.</li>
+                    <li>I have made a small list of naming conventions that I have been using for variables and functions so far... I will keep this updated as I continue and maybe cross-check this with colleagues to ensure it is comprehensible.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
                 <h2>13/01/22</h2>
                 <ul>
                     <li>The central canvas was fixed to have a main display, and have four buttons along the bottom to select what will be displayed.</li>
