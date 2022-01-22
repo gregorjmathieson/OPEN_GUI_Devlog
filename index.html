@@ -23,6 +23,58 @@
         </div> -->
         <div class="row">
             <div class="card">
+                <h2>22/01/22</h2>
+                <ul>
+                    <li>A <strong>very</strong> basic test case that accesses OPEN through OPENGUI has been implemented.</li>
+                    <li>This test case utilises the existing OPEN_buildings_case_study.py file, however the file has been copied and renamed to "building_test.py" for my own testing purposes. Note also that the internal code in the original test script has been defined inside of a __main__() function for the sake of passing variables from the GUI.</li>
+                    <li>Currently, as a simple test, the "building_test.py" file can be run by pressing "Run" -> "Run Simulation" -> "OPEN Test"</li>
+                    <div id="album">
+                        <a href="IMAGES/RunSimTest/runmenu.PNG" data-lightbox="runsimtest"><img class="images" src="IMAGES/RunSimTest/runmenu.PNG"></img></a>
+                        <a href="IMAGES/RunSimTest/opensimtestparams.PNG" data-lightbox="runsimtest"><img class="images" src="IMAGES/RunSimTest/opensimtestparams.PNG"></img></a>
+                        <a href="IMAGES/RunSimTest/codestarted.PNG" data-lightbox="runsimtest"><img class="images" src="IMAGES/RunSimTest/codestarted.PNG"></img></a>
+                        <a href="IMAGES/RunSimTest/windowsdisplayed.PNG" data-lightbox="runsimtest"><img class="images" src="IMAGES/RunSimTest/windowsdisplayed.PNG"></img></a>
+                    </div>
+                    <li>Once the "OPEN Test" menu item has been clicked, a dialogue titled "OPEN Simulation Test Parameters" appears, asking for what season should be selected. (Summer or Winter)</li>
+                    <li>This choice is then passed onto the "building_test.py" script and the entire script is executed. Note that it would be simple to add more parameters in the event dialogue to change inside of the test file.</li>
+                    <li>After the calculations have been completed, the graphs that are generated through the original OPEN library and MatPlotLib appear as seperate windows and can be saved individually.</li>
+                    <br>
+                    <li>Obviously more functinality and communication between the OPEN library and OPENGUI will be added in the future, but this is a great first step in terms of functionality</li>
+                    <br>
+                    <li>Also in the future I would like for there to be much more feedback to the GUI, such as the "network sim complete for t = #" etc to be displayed in the GUI.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>21/01/22</h2>
+                <ul>
+                    <li>Note that there is currently dodgy support for wxPython through Linux distribututions. Although technically supported, there seems to be some libraries within the wxPython framework that aren't supported by the main linux Debian distributables.</li>
+                    <li>OPENGUI will be, in theory at least, cross platform. However, wxPython installs might be trickier for Linux users.</li>
+                    <li>Read more about installing wxPython for Linux <a href="https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/index.html">here</a>.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>20/01/22</h2>
+                <ul>
+                    <li>A simple "Help" button has been added. The idea is that eventually there will be a help page or wiki environment for this program, and this help button will open up that page in a window inside of the GUI.</li>
+                    <li>Currently the Help button (on the toolbar) only opens a small window leading to this devlog as a placeholder.</li>
+                    <li>There is a known bug that the html window is not scrollable within the GUI. This has been noted and will be mended at a later date.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>19/01/22</h2>
+                <ul>
+                    <li>Ability to load data from a .csv file is implemented. There is a known bug about file size, and the rows and columns of the data grid can not yet be dynamically changed. It might be easier to just add a couple hundred rows and columns and just have them loaded constantly.</li>
+                    <li>The next step from here would be to change the way that csv files are read to include empty spaces... Since the basic functionality is here I will put this problem on the backburner for the time being.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
                 <h1>New Look!</h1>
                 <h2>17/01/22</h2>
                 <ul>
