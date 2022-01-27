@@ -23,6 +23,18 @@
         </div> -->
         <div class="row">
             <div class="card">
+                <h1>Bug Squashing</h1>
+                <h2>26/01/22</h2>
+                <ul>
+                    <li>Fixed a bug that made the container with the "Add Row" and "Add Column" buttons take up half of the central canvas on the "DATA" tab whenever fullscreen was enabled. Now the buttons remain the same size above the data grid.</li>
+                    <li>Fixed the "Add Row" and "Add Column" buttons on the "DATA" tab of the central canvas.</li>
+                    <li>Fixed .csv implementation. Now the grid size will change dynamically depending on the size of .csv file implemented, so the data grid will not run out of available cells when loading data.</li>
+                    <li>Fixed a bug where the characters <code>ï»¿</code> would be displayed in the first cell whenever a .csv file was loaded from a previous Excel spreadsheet. This problem was fixed by adding the line <code>encoding='utf-8-sig'</code> to the SavaData.py file.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
                 <h2>22/01/22</h2>
                 <ul>
                     <li>A <strong>very</strong> basic test case that accesses OPEN through OPENGUI has been implemented.</li>
