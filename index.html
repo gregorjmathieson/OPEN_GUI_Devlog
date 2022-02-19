@@ -21,6 +21,84 @@
                 </ul>
             </div>
         </div> -->
+        <!--TODO add entries for all of february.-->
+        <div class="row">
+            <div class="card">
+                <h2>19/02/22</h2>
+                <ul>
+                    <li>Implemented a <a href="IMAGES/refreshparamaters.PNG" data-lightbox="refreshparams">new central canvas page</a> called "PARAMETERS"</li>
+                    <!-- <a href="IMAGES/refreshparamaters.PNG" data-lightbox="refreshparams"><img class="images" src="IMAGES/refreshparamaters.PNG"></a> -->
+                    <li>This PARAMETERS page contains a list of parameters for the building and market groups, all of which can be edited</li>
+                    <li>After updating the parameters they must be refreshed using the button at the bottom right of the panel</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>16/02/22</h2>
+                <ul>
+                    <li>Whenever a simulation is started through the <code>Run -> Run Simulation -> OPEN Test</code> menu, a <a href="IMAGES/newTestDialogue.PNG" data-lightbox="newtestdialogue">new dialogue</a> appears.</li>
+                    <!-- <a href="IMAGES/newTestDialogue.PNG" data-lightbox="newtestdialogue">new dialogue</a> -->
+                    <li>Now the parameters of each bus in the power network can be edited before the simulation is run.</li>
+                    <li>Note at this point, I am not sure if this is the best way to implement this feature, as this would be tedious with multiple buses.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Plans for moving forward</h1>
+                <h2>14/02/22</h2>
+                <ul>
+                    <li>Will work my way across the <a href="IMAGES/OPENUML.PNG" data-lightbox="OPENUML">OPEN UML diagram</a>, from right to left</li>
+                    <li>I will try to add functionality and communication with OPEN for each class in an energy system</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Second BEng Presentation</h1>
+                <h2>11/02/22</h2>
+                <iframe src="https://onedrive.live.com/embed?cid=04FDE0E9F9B597D6&amp;resid=4FDE0E9F9B597D6%2111047&amp;authkey=ADHN9Fs-ePTvR0k&amp;em=2&amp;wdAr=1.7777777777777777" width="800px" height="450px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>09/02/22</h2>
+                <ul>
+                    <li>Loading dialogue is now initiated on the <code>EnergySystem.py</code> file, in time with the usual timer that is displayed in the command console</li>
+                    <li>To fix the problem that was happening previously with the loading dialogue, I changed <code>.ShowModal()</code> to <code>.Show()</code> and this allows the rest of the code to continue while the dialogue is displayed</li>
+                    <li>Unfortunately, there seems to be a bug when using <code>.Show()</code> that does not display static text. I will attempt to have a loading bar shown again at some time in the future</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>05/02/22</h2>
+                <ul>
+                    <li>Moved all dialogues and pop-up dialogues (called pop-ups from now on) to seperate python scripts that are now called by the main canvas.</li>
+                    <li>Generic loading dialogue cannot be displayed and allow the rest of the code to continue...</li>
+                    <li>Unsure as to why this issue is caused, I believe it has to do with calling the dialogue in a <code>print()</code> statement</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>04/02/22</h2>
+                <ul>
+                    <li>Currently the main canvas file is really crowded, and quite long</li>
+                    <li>Since I want to maintain readability, I think I will move the generic dialogues and dialogue pop-ups to seperate files</li>
+                    <li>In order to do this, however, I will need to know how to pass variables across classes in seperate files, meaning I will need to do some more research in OOP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>01/02/22</h2>
+                <ul>
+                    <li>Fixed a visual bug where the left-hand panels had a slight border</li>
+                </ul>
+            </div>
+        </div>
         <div class="row">
             <div class="card">
                 <h1>Bug Squashing</h1>
