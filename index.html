@@ -12,6 +12,7 @@
             <img class="logo" src="IMAGES/University_of_Edinburgh_ceremonial_roundel.svg.png">
             <h2>OPEN GUI DEVELOPMENT LOG</h2>
             <h5>Gregor Mathieson (s1801007)</h5>
+            <h5><a href="webhelp.html">Help Page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/gregorjmathieson/OPENGUI">GitHub</a></h5>
         </div>
         <!-- <div class="row">
             <div class="card">
@@ -21,7 +22,173 @@
                 </ul>
             </div>
         </div> -->
-        <!--TODO add entries for all of february.-->
+        <div class="row">
+            <div class="card">
+                <h1>Added Proper Web Help Page</h1>
+                <h2>14/04/22</h2>
+                <ul>
+                    <li><a href="webhelp.html">Click Here</a></li>
+                    <li>This webpage includes small videos on how to do some of the basic functions of the GUI.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>GitHub Repository Made Public</h1>
+                <h2>08/04/22</h2>
+                <ul>
+                    <li><a href="https://github.com/gregorjmathieson/OPENGUI">Click Here</a></li>
+                    <li>Also, a small "Clear All" button was added to the data grid.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Future Plans</h1>
+                <h2>05/04/22</h2>
+                <ul>
+                    <li>Will make OPENGUI repository on GitHub Public</li>
+                    <li>Some changes will need to be added before this GUI can be used completely instead of coding.</li>
+                    <li>The user should be able to delete assets, choose what assets are used in the simulation etc.</li>
+                    <li>The user should be able to further manipulate the markets and choose an "active market" to use in simulation.</li>
+                    <li>A more generic simulation method should be developed to allow for more freedom.</li>
+                    <li>The network portion of the energy system currently has very little interaction, other than changing some values on the three active buses already a part of the current simulation. In the future more network manipulation should be added.</li>
+                    <li>Currently the visualisation of the energy system is still lacking. In the future some sort of colour-based drag-and-drop system should be used to display the network status.</li>
+                    <li>All created assets should be stored somewhere outside of the GUI for later use.</li>
+                    <li>The state of the GUI should be stored for later use, some sort of save file.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Web Help Fixed</h1>
+                <h2>02/04/22</h2>
+                <ul>
+                    <li>There was a problem with the html window within the GUI not being scrollable.</li>
+                    <li>This issue has been fixed, it was due to an inheritance issue.</li>
+                    <li>Now the web help functionality works as intended. However, there is no option to "go back" as one could on a normal browser.</li>
+                    <li>Although this is an option to be considered in the future, for now I will just remove the need to go back and forth on the new webpage.</li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Error Handling</h1>
+                <h2>25/03/22</h2>
+                <ul>
+                    <li>Added a generic error dialogue.</li>
+                    <li>This new error dialogue is set to pop up whenever a python or windows error occurs.</li>
+                    <li>The error dialogue has been implemented so that a small sentence with the type of error that occured is displayed whenever it appears.</li>
+                    <li>Note that not all errors are accounted for at the moment. I will have to either search for as many as I can, find some method of having it appear for all errors, or for having a part of the web help page that allows users to send in error reports.</li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Status Bar</h1>
+                <h2>20/03/22</h2>
+                <ul>
+                    <li>A simple status bar has actually been a part of the GUI for some time now, however now it has some basic functionalities.</li>
+                    <li>The right hand side of the status bar at the bottom will display the current version of the GUI.</li>
+                    <li>The left hand side is used for the file select system when a file is loaded, and shows the current active filepath for loading data.</li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>User Library, Top Left Panel</h1>
+                <h2>18/03/22</h2>
+                <ul>
+                    <li>The user library now correlates with the rest of the GUI.</li>
+                    <li>Currently, whenever a file is double-clicked, it is considered active. Unfortunately this cannot be implemented for single-clicks so it is a little unintuitive.</li>
+                    <li>The selected file will be the one loaded whenever <code>Data -> Load Selected File</code> is selected.</li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Update on class storage system</h1>
+                <h2>14/03/22</h2>
+                <ul>
+                    <li>An asset class and a market class were created in a seperate python file called AssetList.py</li>
+                    <li>Each class contains a method of adding a new asset or market of every type available to a list of active assets (or markets).</li>
+                    <li>The list stores the actual class of the asset, or rather a pointer to each instantiation of the asset type. These can be called upon individually.</li>
+                    <li>A library of all of the different types of asset (etc..) and their default parameters exists to help in creating new assets.</li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>09/03/22</h2>
+                <ul>
+                    <li>Added another menu button to add a new Market to the system.</li>
+                    <li>In the future the user should have the ability to choose which market is active.</li>
+                    <li>Added a market class.</li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>07/03/22</h2>
+                <ul>
+                    <li>Added a menu button to add a new Asset object to the system.</li>
+                    <li>This is accessed through <code>File -> New -> Asset</code></li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>03/03/22</h2>
+                <ul>
+                    <li>Values are stored in class</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Parameter List, Top Right Panel</h1>
+                <h2>27/02/22</h2>
+                <ul>
+                    <li>Whenever an object is selected, the parameters are displayed in the top right panel, with their names and values.</li>
+                    <li>The code works so that the parameters are automatically read from the class definition in the System/Assets.py file.</li>
+                    <li>The code is set so that all of the assets will be refreshed once a value is typed into the table, so that the asset parameters are actually modified.</li>
+                    <li>Currently, there is no method to store assets outside of the GUI. This is something that should be added in the future.</li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>Object List, Bottom Right Panel</h1>
+                <h2>24/02/22</h2>
+                <ul>
+                    <li>The Asset List appears whenever one element in the system tree is double clicked.</li>
+                    <li>Whenever an element in the system tree is selected, e.g. "Assets", all of the objects within that part of the system will be displayed.</li>
+                    <li>In other words, when a class within the energy system is selected, all </li>
+                    <!-- Image Here -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h1>System Tree, Bottom left Panel</h1>
+                <h2>21/02/22</h2>
+                <ul>
+                    <li>There is now a system tree in the bottom left panel.</li>
+                    <li>The system consists of a dropdown tree labeled "Energy System".</li>
+                    <li>The tree contains three subcategories labeled "Assets", "Market", and "Network".</li>
+                    <!-- Image Here -->
+                    <li>The plan is to have an object list implemented in the bottom right panel to compliment this panel.</li>
+                </ul>
+            </div>
+        </div>
         <div class="row">
             <div class="card">
                 <h2>19/02/22</h2>
