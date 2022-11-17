@@ -43,8 +43,8 @@ li {
   .images {
     flex: 40%;
     padding: 5px;
-    width: 90%;
-    /* height: 20px; */
+    width: 20%;
+    height: 20%;
   }
 
   .images:hover {
@@ -52,9 +52,11 @@ li {
   }
 
   #album {
-    text-align: center;
-    display: flex;
-    width: 100%;
+
+    /* text-align: center; */
+    /* display: flex;
+    flex-wrap:wrap-reverse;
+    width: 100%; */
   }
   
   /* Add a card effect for articles */

@@ -24,6 +24,24 @@
         </div> -->
         <div class="row">
             <div class="card">
+                <h2>17/11/22</h2>
+                <ul>
+                    <li>Changed the way arrays are displayed in the wx.propertygrid in the Object Parameters panel. Object Parameter arrays can now be edited more easily, and the function that updates the changed values has been updated as well.</li>
+                    <li>System for better data permanance is to be implemented using data serialization.</li>
+                    <li>Proposed new file system to save user data in shown below. The user should be able to click <code>File -> New -> Project</code> and a new project should be created within "UserData" with the following directory tree:</li>
+                    <a href="IMAGES/17-11-22/ProposedFileTree.PNG" data-lightbox="17-11-22"><img class="images" src="IMAGES/17-11-22/ProposedFileTree.PNG" height="100px"></a>
+                    <br>
+                    <li>A new file type <code>.open</code> can be used using python's pickle module. This module can serialise data and store it in files that can then be read at a later date.</li>
+                    <li>The idea is for <code>.open</code> files to contain instantiated object information that can be loaded at a later date. This type of serialisation should lead to the ability to import projects to different machines etc., as well as more data permanance within the OPENGUI.</li>
+                    <br>
+                    <li>Implementation started for saving files, a new function <code>saveObject()</code> was built in the <code>SaveData.py</code> module. This function should allow for selected instantiated objects to be saved to the UserData section.</li>
+                    <li>New Projects can be created by pressing <code>File -> New -> Project</code>. The active project is then displayed on the status bar at the bottom of the canvas.</li>
+                    <li>User should have the choice to save the entire project at any given time through <code>Data -> Save -> Project Data</code>. The user should also be asked about overwriting data, closing without saving, etc through pop-up windows.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
                 <h1>Back to Business</h1>
                 <h2>15/11/22</h2>
                 <ul>
@@ -38,7 +56,7 @@
                     <br>
                     <li>Files are now loaded into the data grid by double clicking on a file in the user library. The data page in the notebook in the central panel is automatically selected.</li>
                     <li>Added an <code>on_close()</code> function to be called when the window is closed to assure the program is killed.</li>
-                    <a href="IMAGES/15-11-22/OPENGUI.PNG" data-lightbox="15-11-22"><img class="images" src="IMAGES/15-11-22/OPENGUI.PNG"></a>
+                    <a href="IMAGES/15-11-22/OPENGUI.PNG" data-lightbox="15-11-22" ><img class="images" src="IMAGES/15-11-22/OPENGUI.PNG" width=20px></a>
                 </ul>
             </div>
         </div>
