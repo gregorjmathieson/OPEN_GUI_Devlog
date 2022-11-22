@@ -24,7 +24,26 @@
         </div> -->
         <div class="row">
             <div class="card">
-                <h2>21/11/22-</h2>
+                <h2>22/11/22</h2>
+                <ul>
+                    <li>Completed the load project dialogue. This dialogue can be accessed via <code>Data -> Load -> Load Project</code>.</li>
+                    <li>The load project dialogue is also opened on start-up, since functionality of the GUI will now depend on there being an active project selected.</li>
+                    <li>There is a small issue with forward and back slashes, where python strings cannot contain a backslash, but the os active dirtectory is written with backslashes. This does not impede any functionality so will be ignored for now, but it looks ugly.</li>
+                    <br>
+                    <li>Added the ability to switch between projects. The active project is always displayed at the status bar.</li>
+                    <li>Assets are now loaded from the /ENERGY_SYSTEM/ASSETS/ folder whenever a project is loaded.</li>
+                    <li>Added a class method for clearing all active assets.</li>
+                    <br>
+                    <li>Need to add a method of the canvas refreshed whenever a new project is loaded.</li>
+                    <li>Need to change the New Asset dialogue to include a way of selecting all parameters etc before saving the new asset to a .open file.</li>
+                    <li>Small bug where the user directory search bar is now empty, rather than showing the active directory.</li>
+                    <li>The import of curves.py had to be commented out for the GUI to function properly, will have to rewrite the curves display next year.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>21/11/22</h2>
                 <ul>
                     <li>Project data can now be saved into the active project directory.</li>
                     <li>Currently there is only the option to save the entire project, which saves all of the assets and the market objects as <code>.open</code> files.</li>
