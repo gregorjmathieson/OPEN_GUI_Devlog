@@ -24,6 +24,24 @@
         </div> -->
         <div class="row">
             <div class="card">
+                <h2>23/11/22</h2>
+                <ul>
+                    <li>Objects are now loaded correctly from files. Whenever parameters are changed, and then the project saved, the objects can be loaded with the same parameters. In other words, the objects can be saved and loaded from files correctly.</li>
+                    <li>Fixed a small problem where the object list was just displaying "Asset" for all asset types. Now it shows the correct asset type. Note that this information is taken from the asset type class declaration in the System directory, so in theory should work for any new type of asset that is added.</li>
+                    <li>The New Asset button now works again, and the data can be saved when the whole project is saved.</li>
+                    <br>
+                    <li>Bug when displaying the "Asset" type object. Seems to be a problem with numpy arrays... <code>TypeError: iteration over a 0-d array</code></li>
+                    <li>The New Asset Dialogue still needs to be completed.</li>
+                    <li>There should be a way of deleting an asset (with an "Are you sure?" dialogue) by right-clicking the active asset list.</li>
+                    <br>
+                    <li>Should have an option to import objects from other projects / user directory somewhere.</li>
+                    <li>Probably need to redo entire sphinx documentation process as too much has changed in the project.</li>
+                    <li>Definitely need to make the gui refresh after a new project is loaded.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
                 <h2>22/11/22</h2>
                 <ul>
                     <li>Completed the load project dialogue. This dialogue can be accessed via <code>Data -> Load -> Load Project</code>.</li>
