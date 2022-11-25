@@ -24,6 +24,24 @@
         </div> -->
         <div class="row">
             <div class="card">
+                <h2>25/11/22</h2>
+                <ul>
+                    <li>Finally fixed some hideous code (No more <code>exec(code)</code>) . Using <code>__setattr__()</code>, I can dynamically change instance variables without knowing the names beforehand.</li>
+                    <li>The new asset dialogue actually works now! Using the <code>__setattr__()</code> command the values taken from the dialogue text boxes can be assigned to the instance of the asset.</li>
+                    <li>Grid data clears before opening new file.</li>
+                    <li>Pop up "Are you sure?" before clearing grid, but not when called from another funtion! This means that there won't be more than one pop-up whenever the data grid is being rewritten whenever a new file is loaded.</li>
+                    <li>Web Help Dialogue box says "Close" rather than "OK" for the close button.</li>
+                    <li>Added a <code>task_complete</code> instance variable to the new asset dialogue. This is set to 1 by default, but is set to zero if the dialogue is closed. This means that the "Task Complete!" Pop-up will not be shown if the dialogue is closed.</li>
+                    <li>The "SaveData" folder is no longer be used. There is now a "GRID_DATA" directory within the project directory that the grid data is saved to.</li>
+                    <a href="IMAGES/25-11-22/NewFileTree.PNG" data-lightbox="25-11-22"><img class="images" src="IMAGES/25-11-22/NewFileTree.PNG" height="100px"></a>
+                    <br>
+                    <li>For the central display window: it might be easiest to use HTML/CSS to create pages for viewing data / power network display. The webpage can be displayed in the central window within the GUI. NOTE: Might need to migrate to wxPython Phoenix for this to work properly.</li>
+                    <li>Still need to make sure that the file tree etc. is refreshed when an action happens. It's slighly annoying to have to click in and out to refresh it.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
                 <h2>24/11/22</h2>
                 <ul>
                     <li>Dialogue box now exists to insert asset parameters when a new asset is made. Note the actual numbers aren't taken in yet but the number of text boxes changes dynamically with the number of parameters.</li>
